@@ -114,16 +114,13 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'MattesGroeger/vim-bookmarks'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'terryma/vim-multiple-cursors'
 
 "Plugins to HTML5
 Plugin 'othree/html5.vim'
 Plugin 'mattn/emmet-vim'
 "Plugins to Python
 Plugin 'Glench/Vim-Jinja2-Syntax'
-"Plugins to Lua
-Plugin 'xolox/vim-lua-inspect'
-"Plugins to ValaL
-Plugin 'tkztmk/vim-vala'
 "Plugins to Javascript
 Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
@@ -248,7 +245,7 @@ let g:used_javascript_libs = 'jquery'
 "let g:solarized_termtrans = 1
 "let g:solarized_degrade = 1
 
-"+============
+"+============+
 "| Misc Setup |
 "+============+
 nnoremap <silent> <C-i> : nohl<CR><C-i> "<Ctrl-l> redraws the screen and remove any search highlighting
@@ -271,3 +268,14 @@ autocmd BufWritePre *.php :%s/\s\+$//e
 
 " Configuration YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '/home/alonso/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+"+======================+
+"| Vim Multiple Cursors |
+"+======================+
+let g:multi_cursor_use_default_mapping=0
+
+" Default mapping
+let g:multi_cursor_next_key='<C-d>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
