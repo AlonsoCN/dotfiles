@@ -1,0 +1,60 @@
+"""""+========================================+
+"""""| autor: Luis Alonso Calle Núñez         |
+"""""| email: luis.alonso.cn at gmail dat com |
+"""""| twitter: _AlonsoCN                     |
+"""""+========================================+
+
+"+========+
+"| Colors |
+"+========+
+syntax enable " Enable syntax processing
+
+"+===============+
+"| Spaces & Tabs |
+"+===============+
+set tabstop=4 " Number of visual space per TAB
+set softtabstop=4 " Number of space in tab when editing
+set expandtab " Tabs are spaces
+
+"+===========+
+"| UI Config |
+"+===========+
+set number " Show line numbers
+set showcmd " Show command in bottom bar
+set cursorline " Highlight current line
+filetype indent on " Load filetype-specific indent files
+set wildmenu " Visual autocomplete for command menu
+set lazyredraw " Redraw only when we need to
+set showmatch " Highlight matching [{()}]
+
+"+===========+
+"| Searching |
+"+===========+
+set incsearch " Search as characters are entered
+set hlsearch " Highlight matches
+" Turn off search highlight
+"nnoremap <leader><space> :nohlsearch<CR> 
+"set hlsearch!
+nnoremap <F3> :set hlsearch!<CR>
+
+"+=========+
+"| Folding |
+"+=========+
+set foldenable " Enable folding
+set foldlevelstart=10 " Open most folds by default
+set foldnestmax=10 " 10 nested fold max
+" Space open/closes folds
+nnoremap <space> za
+set foldmethod=indent " Fold based on indent level
+
+"+==========+
+"| Movement |
+"+==========+
+" Move vertically by visual line
+"nnoremap j gj
+"nnoremap k gk
+
+"+==================+
+"| Leader Shortcuts |
+"+==================+
+inoremap jk <esc>
